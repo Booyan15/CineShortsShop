@@ -273,3 +273,11 @@ h2 {
     font-weight: bold; /* Make the discounted price bold */
     color: #333; /* Color of the discounted price */
 }
+
+
+.category-card img {
+    width: 300px;  /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    border-radius: 10px; /* Maintain rounded corners */
+}
