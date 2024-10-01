@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9000;
+}
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none; /* Initially hidden */
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        background-color: #222;
+        position: absolute;
+        top: 60px; /* Adjust this based on your header height */
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    nav ul.show {
+        display: flex; /* Show the menu when the class 'show' is added */
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the hamburger menu */
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative; /* To position the overlay */
+    background: url('/images/website pozadina.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker black overlay with 60% opacity */
+    z-index: 1; /* Overlay appears above the background image */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Content appears above the dark overlay */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.shop-btn {
+    background-color: #ff9000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #e07b00;
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Trending Products */
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    background: linear-gradient(90deg, #222, #424242);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buy-btn:hover {
+    background: linear-gradient(90deg, #313131, #4e4e4e);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.9s all ease;
+}
+
+/* Categories */
+.categories-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.shop-btn {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: rgb(61, 61, 60)
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
