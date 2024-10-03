@@ -174,6 +174,8 @@ h2 {
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .product-card img {
@@ -311,4 +313,16 @@ h2 {
 
 .trial-btn:hover {
     background-color: #005bb5; /* Darker color on hover */
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff3b3b;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }

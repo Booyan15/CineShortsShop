@@ -30,3 +30,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const productCards = document.querySelectorAll('.product-card');
+
+    productCards.forEach(card => {
+        const crossedPriceElem = card.querySelector('.crossed-price');
+        const discountedPriceElem = card.querySelector('.discounted-price');
+        
+        if (crossedPriceElem && discountedPriceElem) {
+            const originalPrice = parseFloat(crossedPriceElem.textContent.replace('$', ''));
+            const discountedPrice = parseFloat(discountedPriceElem.textContent.replace('$', ''));
+
+            const discountPercentage = Math.round(((originalPrice - discountedPrice) / originalPrice) * 100);
+
+            const discountDiv = document.createElement('div');
+            discountDiv.classList.add('discount');
+            discountDiv.textContent = `-${discountPercentage}%`;
+
+            card.appendChild(discountDiv);
+        }
+    });
+});
