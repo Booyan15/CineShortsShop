@@ -35,6 +35,7 @@ nav ul {
     display: flex;
     gap: 15px;
     transition: all 0.3s ease;
+    background: linear-gradient(135deg, #996209, #ac672c, #723812);
 }
 
 nav ul li {
@@ -49,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4b4b4b;
+    color: #c4c4c4;
 }
 
 /* Hamburger Menu */
