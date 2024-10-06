@@ -359,3 +359,30 @@ section.categories {
     background-color: #0b0b0b; /* Fallback background color */
     color: #f39c12; /* Optional: change text color to fit theme */
 }
+
+
+.return-btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #ff9900;
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.top-return-btn, .bottom-return-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.top-return-btn {
+    margin-bottom: 20px;
+}
+
+.bottom-return-btn {
+    margin-top: 40px;
+}
