@@ -364,3 +364,69 @@ h2 {
 .bottom-return-btn {
     margin-top: 40px;
 }
+
+.category-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.category-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.shop-btn {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: rgb(61, 61, 60);
+}
+
+/* Styling for the Top 10 badge */
+.category-card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff9000; /* Bright orange background */
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+}
+
+.product-card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #c48027; /* Bright orange background */
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    z-index: 1; /* Ensure it appears above other content */
+}
